@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="./style.css">
+<dialog id="host">
+	<div class="peers-head">
+		<a id="room" target="_blank">Link to room</a>
+		<button id="copy">Copy</button>
+	</div>
+	<form>
+		<div>
+			<input type="text" name="name" placeholder="Name">
+		</div>
+		<div class="peer">
+			<label class="peer-name">
+				<p></p>
+				<input type="text" name="key" placeholder="Key">
+			</label>
+			<button type="button" disabled>Invite</button>
+		</div>
+		<button type="submit" disabled>Start</button>
+	</form>
+</dialog>
+<dialog id="join">
+	<div>
+		<p id="room-owner"></p>
+	</div>
+	<div class="peers-head">
+		<input type="text" readonly placeholder="key">
+		<button id="copy">Copy</button>
+	</div>
+	<form>
+		<div>
+			<input type="text" name="name" placeholder="Name">
+		</div>
+		<button type="submit" disabled>Ready</button>
+	</form>
+</dialog>
+<canvas></canvas>
+<script src="./main.js" type="module"></script>

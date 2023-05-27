@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+}
+
+
+
+canvas {
+	height: 100dvmin;
+	width: 100dvmin;
+}
+
+#host .peers-head {
+	display: flex;
+}
+
+#host .peers-head:has(a:not([href])) > * {
+	visibility: hidden;
+}
+
+#host .peer {
+	display: flex;
+}
+
+#host .peer > label {
+	display: flex;
+}
+
+#host .peer-validate input {
+	display: none;
+}
